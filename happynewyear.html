@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>祝王一诺新年快乐</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .greeting {
+            font-size: 2.5em;
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .card {
+            background-color: #fff;
+            border: 2px solid #0066cc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0044cc;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            animation: fall 10s linear infinite, twinkle 1s ease-in-out infinite;
+        }
+        @keyframes fall {
+            0% {
+                top: -10%;
+            }
+            100% {
+                top: 100%;
+            }
+        }
+        @keyframes twinkle {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="greeting">祝王一诺新年快乐！</div>
+        <div class="message">愿你在新的一年里，健康、幸福、成功！</div>
+        <button class="button" onclick="showMessage()">点击这里查看祝福</button>
+    </div>
+</div>
+<script>
+    function showMessage() {
+        alert("新年快乐，王一诺！愿你新的一年充满希望和喜悦！");
+    }
+
+    // 生成雪花效果
+    function createSnowflakes(num) {
+        for (let i = 0; i < num; i++) {
+            let snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * 100 + 'vw';
+            snowflake.style.animationDuration = Math.random() * 5 + 5 + 's';
+            document.body.appendChild(snowflake);
+        }
+    }
+
+    // 创建100个雪花
+    createSnowflakes(100);
+</script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
